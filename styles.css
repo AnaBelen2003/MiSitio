@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Zilla Slab;
+}
+
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 50px; 
+    height: 500px;
+}
+
+#fotoPortada {
+    height: 70%;
+    background-image: url(img/portaa.png);
+    background-position: top;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: -95px;
+    font-size: 80px;
+    color: lightpink;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: grid;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(247, 247, 247);
+    place-items: center; 
+}
+
+#menu {
+    width: 80%;
+}
+
+#menu ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    list-style: none;
+    gap: 15px; 
+}
+
+#menu a {
+    font-size: 20px;
+    color: rgb(41, 156, 41);
+    text-decoration: none;
+    text-align: center; 
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    display: grid;
+    place-items: center; 
+    text-align: center;
+    padding: 20px;
+    background-color: #b8b8b8;
+    color: white;
+}
+
+
+.quienSoy,
+.miFormacion {
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    justify-items: center; 
+    height: 100%;
+}
+
+.quienSoy h1,
+.miFormacion h1 {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 5px;
+    color: rgb(236, 65, 65);
+}
+
+.quienSoy p,
+.miFormacion p {
+    font-size: 25px;
+    margin: 0 20px;
+}
+
+.quienSoy img,
+.miFormacion img {
+    width: 500px;
+    margin: 0 auto;
+}
+
+footer h1 {
+    display: none;
+}
+
+footer a {
+    width: 200px;
+    text-decoration: none;
+}
+
+.fa-brands, .fab {
+    font-weight: 200;
+    font-size: 30px;
+}
